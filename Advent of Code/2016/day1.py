@@ -69,7 +69,7 @@ def calc_dist(elements):
 def calc_blocks(x, y):
     x = abs(x)
     y = abs(y)
-    # TODO hier haperts
+
     print(x + y)
     pass
 
