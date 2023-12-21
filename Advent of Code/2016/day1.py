@@ -12,8 +12,6 @@ def calc_dist(elements):
     y = 0
     counter = True
 
-
-
 def main():
     read_input(str(input("Wie ist die Zeichenfolge? \n")))
 
