@@ -65,7 +65,6 @@ def calc_dist(elements):
                 continue
     calc_blocks(x, y)
 
-
 def calc_blocks(x, y):
     x = abs(x)
     y = abs(y)
