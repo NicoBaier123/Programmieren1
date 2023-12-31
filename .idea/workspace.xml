@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6b8c999-419d-4e72-abaa-86164886622f" name="Changes" comment="renaming branch">
-      <change afterPath="$PROJECT_DIR$/Advent of Code/2016/Tag1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Advent of Code/2016/day1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Age calculator.py" beforeDir="false" afterPath="$PROJECT_DIR$/Einfache Programme/Age calculator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Guessing Game.py" beforeDir="false" afterPath="$PROJECT_DIR$/Einfache Programme/Guessing Game.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/car_game.py" beforeDir="false" afterPath="$PROJECT_DIR$/Einfache Programme/car_game.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/variables.py" beforeDir="false" afterPath="$PROJECT_DIR$/Einfache Programme/variables.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weight converter.py" beforeDir="false" afterPath="$PROJECT_DIR$/Einfache Programme/weight converter.py" afterDir="false" />
+    <list default="true" id="b6b8c999-419d-4e72-abaa-86164886622f" name="Changes" comment=".">
+      <change beforePath="$PROJECT_DIR$/Advent of Code/2016/day1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Advent of Code/2016/day1.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,14 +36,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;codespace-miniature-potato-v66rr79qjjqpfwr7v&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "weekly-python-code"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Schule\Programmieren\Programmieren111" />
@@ -302,16 +295,36 @@
       <option name="project" value="LOCAL" />
       <updated>1703007084939</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="rebasing branch">
+      <option name="closed" value="true" />
+      <created>1703190130916</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1703190130916</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="If you ever been curious" />
     <MESSAGE value="How old are you?" />
     <MESSAGE value="Guessing game" />
-    <MESSAGE value="." />
     <MESSAGE value="renaming branch" />
-    <option name="LAST_COMMIT_MESSAGE" value="renaming branch" />
+    <MESSAGE value="rebasing branch" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
 </project>
