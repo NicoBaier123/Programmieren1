@@ -301,6 +301,7 @@ def find_first_double(koordinates):
         doubles[j + 1] = temp_d
 
 
+
     for element in doubles:
         distance = abs(element[0]) + abs(element[1])
         print("Die Distanz zur ersten Kreuzung die doppelt vorkommt beträgt: " + str(distance))
