@@ -306,7 +306,6 @@ def find_first_double(koordinates):
         print("Die Distanz zur ersten Kreuzung die doppelt vorkommt beträgt: " + str(distance))
         break
 
-
 def main():
     read_input(str(input("Wie ist die Zeichenfolge? \n")))
 
