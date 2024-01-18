@@ -58,3 +58,4 @@ for zeile in input:
     x.append(codefeld[indexUD][indexLR])
 for a in x:
     print(a)
+
