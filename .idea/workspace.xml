@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6b8c999-419d-4e72-abaa-86164886622f" name="Changes" comment="aoc d2, list, tuple, dict">
-      <change afterPath="$PROJECT_DIR$/Advent of Code/2016/aoc-2016-day2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Advent of Code/2016/day2_part2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="b6b8c999-419d-4e72-abaa-86164886622f" name="Changes" comment="aoc day2p2.1 checkzero">
       <change beforePath="$PROJECT_DIR$/Advent of Code/2016/2016_day2_complete.py" beforeDir="false" afterPath="$PROJECT_DIR$/Advent of Code/2016/2016_day2_complete.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -365,7 +362,31 @@
       <option name="project" value="LOCAL" />
       <updated>1705427270162</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="aoc dayp1 checkzero">
+      <option name="closed" value="true" />
+      <created>1705564483909</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1705564483909</updated>
+    </task>
+    <task id="LOCAL-00025" summary="aoc day2p1 checkzero">
+      <option name="closed" value="true" />
+      <created>1705564535022</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1705564535022</updated>
+    </task>
+    <task id="LOCAL-00026" summary="aoc day2p2.1 checkzero">
+      <option name="closed" value="true" />
+      <created>1705564612744</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1705564612744</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -390,14 +411,17 @@
     <MESSAGE value="day 1 complete" />
     <MESSAGE value="aoc d2" />
     <MESSAGE value="aoc d2, list, tuple, dict" />
-    <option name="LAST_COMMIT_MESSAGE" value="aoc d2, list, tuple, dict" />
+    <MESSAGE value="aoc dayp1 checkzero" />
+    <MESSAGE value="aoc day2p1 checkzero" />
+    <MESSAGE value="aoc day2p2.1 checkzero" />
+    <option name="LAST_COMMIT_MESSAGE" value="aoc day2p2.1 checkzero" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Advent of Code/2016/day2_part2.py</url>
-          <line>60</line>
+          <line>52</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>

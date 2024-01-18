@@ -1,24 +1,4 @@
-def checkzero(positionLR,positionUD,chr):
 
-    if chr=="U":
-        if positionUD > 0 and positionUD <= 4:
-            if codefeld[positionUD-1][positionLR]=="0":
-                return True
-
-    if chr == "D":
-        if positionUD >= 0 and positionUD < 4:
-            if codefeld[positionUD + 1][positionLR] == "0":
-                return True
-
-    if chr == "L":
-        if positionLR > 0 and positionLR <= 4:
-            if codefeld[positionUD][positionLR-1] == "0":
-                return True
-
-    if chr == "R":
-        if positionLR >= 0 and positionLR < 4:
-            if codefeld[positionUD][positionLR+1] == "0":
-                return True
 def codezifferUD(chr, positionUD):
     if chr == "D":
         if positionUD>=0 and positionUD<2:
