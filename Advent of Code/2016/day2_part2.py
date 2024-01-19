@@ -51,7 +51,6 @@ def codezifferLR(chr, positionLR,positionUD):
     return positionLR
 
 
-
 with open("D:\\Schule\\Programmieren\\Programmieren1\\Advent of Code\\2016\\aoc-2016-day2.txt") as file:
     input = file.readlines()
 codefeld = [["0", "0", "1", "0", "0"], ["0", "2", "3", "4", "0"], ["5", "6", "7", "8", "9"], ["0", "A", "B", "C", "0"], ["0", "0", "D", "0", "0"]]
