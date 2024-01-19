@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6b8c999-419d-4e72-abaa-86164886622f" name="Changes" comment="aoc day2p2.1 checkzero">
-      <change beforePath="$PROJECT_DIR$/Advent of Code/2016/2016_day2_complete.py" beforeDir="false" afterPath="$PROJECT_DIR$/Advent of Code/2016/2016_day2_complete.py" afterDir="false" />
+    <list default="true" id="b6b8c999-419d-4e72-abaa-86164886622f" name="Changes" comment="aoc day2p1">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/2016/day2_part2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Advent of Code/2016/day2_part2.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -386,7 +387,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705564612744</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="aoc day2p1">
+      <option name="closed" value="true" />
+      <created>1705564718755</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1705564718755</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -414,17 +423,11 @@
     <MESSAGE value="aoc dayp1 checkzero" />
     <MESSAGE value="aoc day2p1 checkzero" />
     <MESSAGE value="aoc day2p2.1 checkzero" />
-    <option name="LAST_COMMIT_MESSAGE" value="aoc day2p2.1 checkzero" />
+    <MESSAGE value="aoc day2p1" />
+    <option name="LAST_COMMIT_MESSAGE" value="aoc day2p1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Advent of Code/2016/day2_part2.py</url>
-          <line>52</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">

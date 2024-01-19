@@ -19,43 +19,50 @@ def checkzero(positionLR,positionUD,chr):
         if positionLR >= 0 and positionLR < 4:
             if codefeld[positionUD][positionLR+1] == "0":
                 return True
-def codezifferUD(chr, positionUD):
-    if chr == "D":
-        if positionUD>=0 and positionUD<2:
-            positionUD +=1
+
+    return False
+def codezifferUD(chr, positionUD,positionLR):
+    if checkzero(positionLR,positionUD,chr)==True:
+        return positionUD
+    elif chr == "D":
+        if positionUD >= 0 and positionUD < 4:
+            positionUD += 1
         return positionUD
 
     elif chr == "U":
-        if positionUD>0 and positionUD<=2:
-            positionUD -=1
+        if positionUD > 0 and positionUD <= 4:
+            positionUD -= 1
         return positionUD
     return positionUD
 
-def codezifferLR(chr, positionLR):
+
+def codezifferLR(chr, positionLR,positionUD):
+    if checkzero(positionLR,positionUD,chr):
+        return positionLR
     if chr == "R":
-        if positionLR >= 0 and positionLR < 2:
+        if positionLR >= 0 and positionLR < 4:
             positionLR += 1
         return positionLR
 
     elif chr == "L":
-        if positionLR > 0 and positionLR <= 2:
+        if positionLR > 0 and positionLR <= 4:
             positionLR -= 1
         return positionLR
     return positionLR
 
 
+
 with open("D:\\Schule\\Programmieren\\Programmieren1\\Advent of Code\\2016\\aoc-2016-day2.txt") as file:
     input = file.readlines()
-codefeld = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
-indexUD = 1
-indexLR = 1
-x: list[int] = []
+codefeld = [["0", "0", "1", "0", "0"], ["0", "2", "3", "4", "0"], ["5", "6", "7", "8", "9"], ["0", "A", "B", "C", "0"], ["0", "0", "D", "0", "0"]]
+indexUD = 2
+indexLR = 0
+x: list[str] = []
 for zeile in input:
     arr = list(zeile)
     for anweisung in arr:
-        indexUD = codezifferUD(anweisung, indexUD)
-        indexLR = codezifferLR(anweisung, indexLR)
+        indexUD = codezifferUD(anweisung, indexUD,indexLR)
+        indexLR = codezifferLR(anweisung, indexLR,indexUD)
     x.append(codefeld[indexUD][indexLR])
 for a in x:
     print(a)
-
