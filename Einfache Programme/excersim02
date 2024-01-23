@@ -1,0 +1,25 @@
+
+int EXPECTED_BAKE_TIME=10
+int elapsed_bake_time=5
+int preparation_time_in_minutes10
+def bake_time_remaining():
+
+    remaining_bake_time=EXPECTED_BAKE_TIME-elapsed_bake_time
+
+
+    return remaining_bake_time
+
+
+def preparation_time_in_minutes():
+    preparation_time_in_minutes=
+    return preparation_time_in_minutes
+
+
+
+ def elapsed_time_in_minutes()
+    
+    elapsed_bake_time=preparation_time_in_minutes+elapsed_bake_time
+
+    return elapsed_bake_time
+
+bake_time_remaining()
