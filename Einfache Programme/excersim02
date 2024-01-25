@@ -1,0 +1,65 @@
+import unittest
+
+EXPECTED_BAKE_TIME = 40
+elapsed_bake_time = 5
+preparation_time_in_minutes = 10
+input_data = [1, 2, 5, 10, 15, 23, 33, 39]
+result_data = [39, 38, 35, 30, 25, 17, 7, 1]
+
+def bake_time_remaining(time):
+    remaining_bake_time = EXPECTED_BAKE_TIME - time
+    return remaining_bake_time
+
+def preparation_time_in_minutes(layers):
+    # Assuming some logic here to calculate preparation time based on the number of layers
+    return layers * 2
+
+def elapsed_time_in_minutes(preparation_time, elapsed_bake_time):
+    elapsed_bake_time = preparation_time + elapsed_bake_time
+    return elapsed_bake_time
+
+class TestBakeFunctions(unittest.TestCase):
+
+    def test_preparation_time_in_minutes(self):
+        input_data = [1, 2, 5, 8, 11, 15]
+        result_data = [2, 4, 10, 16, 22, 30]
+
+        for variant, (layers, expected) in enumerate(zip(input_data, result_data), start=1):
+            with self.subTest(f'variation #{variant}', layers=layers, expected=expected):
+                actual_result = preparation_time_in_minutes(layers)
+                failure_msg = (f'Called preparation_time_in_minutes({layers}). '
+                               f'The function returned {actual_result}, but the tests '
+                               f'expected {expected} as the preparation time.')
+
+                self.assertEqual(actual_result, expected, msg=failure_msg)
+
+    def test_bake_time_remaining(self):
+        input_data = [1, 2, 5, 10, 15, 23, 33, 39]
+        result_data = [39, 38, 35, 30, 25, 17, 7, 1]
+
+        for variant, (time, expected) in enumerate(zip(input_data, result_data), start=1):
+            with self.subTest(f'variation #{variant}', time=time, expected=expected):
+                actual_result = bake_time_remaining(time)
+                failure_msg = (f'Called bake_time_remaining({time}). '
+                               f'The function returned {actual_result}, but the tests '
+                               f'expected {expected} as the remaining bake time.')
+                self.assertEqual(actual_result, expected, msg=failure_msg)
+
+    def test_elapsed_time_in_minutes(self):
+        elapsed_bake_time = 5
+        preparation_time = 10
+
+        # Assuming some specific expected value based on the inputs
+        expected_result = preparation_time + elapsed_bake_time
+
+        actual_result = elapsed_time_in_minutes(preparation_time, elapsed_bake_time)
+        failure_msg = (f'Called elapsed_time_in_minutes({preparation_time}, {elapsed_bake_time}). '
+                       f'The function returned {actual_result}, but the test expected {expected_result}.')
+
+        self.assertEqual(actual_result, expected_result, msg=failure_msg)
+
+if __name__ == '__main__':
+    unittest.main()
+
+
+    
