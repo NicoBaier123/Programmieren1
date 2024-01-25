@@ -1,3 +1,6 @@
+import tkinter
+
+
 class ChessBoard:
     def __init__(self):
         self.board = [['-' for _ in range(8)] for _ in range(8)]
@@ -11,7 +14,7 @@ class ChessBoard:
         self.board[row][col] = piece
 
     def display_board(self):
-        root = tk.Tk()
+        root = tkinter.Tk()
         root.title("Chess Board")
 
         for row in range(8):
@@ -36,7 +39,7 @@ class ChessBoard:
                 elif piece == 'k':
                     piece = '♚'  # Replace 'k' with '♚' for king
 
-                label = tk.Label(root, text=piece, width=4, height=2, relief="solid", bg=color, fg=fg_color)
+                label = tkinter.Tk.Label(root, text=piece, width=4, height=2, relief="solid", bg=color, fg=fg_color)
                 label.grid(row=row, column=col)
 
         root.mainloop()
