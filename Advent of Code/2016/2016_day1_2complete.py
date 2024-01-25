@@ -1,13 +1,4 @@
-Nico Baier
-nico021218
-AdventOfCode
 
-SirPatschiii
- hat den Kanalnamen zu:
-AdventOfCode
- geändert.
- — 09.01.2024 19:37
-SirPatschiii — 09.01.2024 19:46
 def read_input(input_string):
     elements: list = input_string.split(", ")
     calc_dist(elements)
