@@ -1,0 +1,4 @@
+-libraryjars C:\WTK22\lib\mmapi.jar;C:\WTK22\lib\midpapi20.jar;C:\WTK22\lib\wma11.jar;C:\WTK22\lib\cldcapi10.jar
+-injars C:\WTK22\apps\MatrixCalc\bin\MatrixCalc.jar
+-outjar C:\DOCUME~1\User\LOCALS~1\Temp\MatrixCalc.jar
+-keep public class * extends javax.microedition.midlet.MIDlet 
