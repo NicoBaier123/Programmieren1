@@ -1,8 +1,12 @@
+
 import numpy as np
 from sympy import symbols, Eq, solve
 
+
 def parse_vector_input(input_str):
     return [symbols(val.strip()) if val.strip().isalpha() else float(val.strip()) for val in input_str.split(';')]
+
+
 
 def gauss_elimination(matrix):
     rows, cols = matrix.shape
@@ -25,14 +29,16 @@ def gauss_elimination(matrix):
 
     return matrix, steps
 
+
+
 def check_linear_dependency(vectors):
     matrix = np.array(vectors, dtype=object)  # Use 'object' type to allow for symbolic variables
     augmented_matrix = np.column_stack((matrix, np.eye(len(vectors), dtype=object)))
 
     reduced_matrix, steps = gauss_elimination(augmented_matrix)
 
-    rank_original = np.linalg.matrix_rank(matrix)
-    rank_reduced = np.linalg.matrix_rank(reduced_matrix[:, :len(vectors)])
+    rank_original = np.linalg.matrix_rank(matrix.astype(float))
+    rank_reduced = np.linalg.matrix_rank(reduced_matrix[:, :len(vectors)].astype(float))
 
     if rank_original == rank_reduced:
         if rank_original == len(vectors):
@@ -69,13 +75,3 @@ def check_linear_dependency(vectors):
         else:
             return "Die Vektoren sind linear unabhängig."
 
-# User input for vectors with variables
-vectors = []
-num_vectors = int(input("Enter the number of vectors: "))
-for i in range(num_vectors):
-    vector_input = input(f"Enter vector {i+1} as semi-colon-separated values (e.g., 1; x; 2): ")
-    vector = parse_vector_input(vector_input)
-    vectors.append(vector)
-
-result = check_linear_dependency(vectors)
-print(result)
