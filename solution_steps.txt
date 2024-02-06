@@ -1,0 +1,14 @@
+Die Vektoren sind linear abhängig.
+
+Lösungsweg:
+Gaußsche Eliminationsschritte:
+Pivot element: 2.0
+Row 2 -= 0.5 * Row 1
+Row 3 -= 1.0 * Row 1
+
+Pivot element: 1.0
+Row 3 -= 0.5 * Row 2
+
+
+Lineare Gleichungssysteme:
+Schritt 1: True
