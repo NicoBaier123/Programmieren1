@@ -27,10 +27,11 @@ def gauss_elimination(matrix):
 
     return matrix, steps # Return the reduced matrix and the steps of Gaussian elimination
 
+#######Ab hier weiter debuggen########
 
-def check_linear_dependency(vectors):
+def check_linear_dependency(vectors): # Check the linear dependency of a list of vectors
     matrix = np.array(vectors, dtype=object)  # Use 'object' type to allow for symbolic variables
-    augmented_matrix = np.column_stack((matrix, np.eye(len(vectors), dtype=object)))
+    augmented_matrix = np.column_stack((matrix, np.eye(len(vectors), dtype=object))) 
 
     reduced_matrix, steps = gauss_elimination(augmented_matrix)
 
