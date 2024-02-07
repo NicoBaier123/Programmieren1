@@ -8,3 +8,7 @@ Row 2 -= 0.5 * Row 1
 
 Lineare Gleichungssysteme:
 Schritt 1: True
+
+Keine Lösung gefunden.
+
+Keine Lösung gefunden.
