@@ -21,16 +21,15 @@ def gauss_elimination(matrix):
             factor = matrix[j, i] / matrix[i, i] # Calculate the factor to eliminate the element below the pivot element
             matrix[j, i:] -= factor * matrix[i, i:] # Eliminate the element below the pivot element
             step += f"Row {j+1} -= {factor} * Row {i+1}\n" # Store the step
-
+            step += f"Matrix\n{matrix}\n\n" # Store the matrix
         steps.append(step) # Store the step
 
     return matrix, steps # Return the reduced matrix and the steps of Gaussian elimination
 
-#######Ab hier weiter debuggen########
 
 def check_linear_dependency(vectors): # Check the linear dependency of a list of vectors
     matrix = np.array(vectors, dtype=object)  # Use 'object' type to allow for symbolic variables
-    augmented_matrix = np.column_stack((matrix, np.eye(len(vectors), dtype=object))) # Create an augmented matrix with the identity matrix
+    augmented_matrix = matrix #dtype=object))) # Create an augmented matrix with the identity matrix
 
     reduced_matrix, steps = gauss_elimination(augmented_matrix)
 
@@ -99,5 +98,3 @@ def check_linear_dependency(vectors): # Check the linear dependency of a list of
                 return "Die Vektoren sind linear abhängig. Die Lösungswerte für die Parameter sind frei wählbar."
         else:
             return "Die Vektoren sind linear unabhängig."
-
-
