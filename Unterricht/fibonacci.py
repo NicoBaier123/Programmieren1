@@ -1,7 +1,6 @@
 defaultdict = __import__('collections').defaultdict
 count=defaultdict(int)
 cache = {}
-
 def fibonacci(n):
     if n in cache:
         return cache[n]
@@ -19,3 +18,4 @@ def fibonacci(n):
     return result
 
 result = fibonacci(n-1) + fibonacci(n-2)
+print(result)
