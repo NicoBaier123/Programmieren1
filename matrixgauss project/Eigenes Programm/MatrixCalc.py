@@ -3,7 +3,7 @@ from sympy import symbols, Eq, solve
 
 
 def parse_vector_input(input_str):
-    return [symbols(val.strip()) if val.strip().isalpha() else float(val.strip()) for val in input_str.split(';')]
+    return [symbols(val.strip()) if val.strip().isalpha() else float(val.strip()) for val in input_str.split(';')] # Parse the input string into a list of values
 
 def gauss_elimination(matrix):
     rows, cols = matrix.shape # matrix.shape returns a tuple with the number of rows and columns
@@ -59,7 +59,6 @@ def check_linear_dependency(vectors): # Check the linear dependency of a list of
                 file.write(step)
                 file.write("\n")
             file.write("\n")
-            file.write("Lineare Gleichungssysteme:\n")
             for i, eq in enumerate(equations):
                 file.write(f"Schritt {i+1}: {eq}\n")
 

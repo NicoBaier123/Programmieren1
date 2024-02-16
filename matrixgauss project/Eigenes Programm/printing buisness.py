@@ -1,1 +1,0 @@
-print( "Die Vektoren sind linear abhängig. Die Lösungswerte für die Parameter sind:\n{}\nLösungsweg wurde in 'solution_steps.txt' gespeichert.")
