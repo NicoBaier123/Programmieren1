@@ -1,2 +1,3 @@
-I will post my weekly Python Code here about 4 times a week. Every Tuesday you can find a Blog on 'Discussions'. 
+I will post my weekly Python Code here about 4 times a week, sometimes I forget to commit my Code so it is possible that some days have 0 commits and some 8...
+Every Tuesday you can find a Blog on 'Discussions'. 
 Schedule: My Schedule is really spontaneus. Every Tuesday I am starting with a new Day in Advent of Code. Depending on how far i've come I continue programming on that task in the following days. If I claimed the star of the day I do some smaller programs just to improve my understanding of some functions in python. 
